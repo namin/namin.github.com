@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+<head>
+<title>{% if page.title %} {{ page.title }} &larr; {% endif %}Nada Amin</title>
+<meta name="author" content="Nada Amin"></meta>
+<style type="text/css">
+/* <![CDATA[ */
+body {
+ font-family: 'Lucida Grande', Verdana, Arial, sans-serif;
+}
+
+h1, h2, h3, h4 {
+ font-family: Garamond, "Century Schoolbook L", serif;
+}
+
+h1 [lang|="ar"] {
+ font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+ text-align: right;
+}
+#header {
+ overflow:hidden;
+ xxposition:relative;
+ background: #efefef;
+ border-bottom: 1px solid #ccc;
+ padding: 1em;
+}
+#head {
+ float: left;
+}
+#info {
+ float: right;
+ top: 2em;
+ right: 2em;
+}
+#info ul {
+ list-style: none;
+}
+#content {
+ margin: 1em;
+}
+#footer {
+ text-align: center;
+ border-top: 1px solid #ccc;
+ padding: 1em;
+}
+#footer a:link, #footer a:visited {
+ text-decoration: none;
+}
+.disabled {
+ color: grey;
+}
+pre, code {
+  font-family: consolas, "Liberation Mono", monospace;
+}
+pre {
+ background-color: #f0f0f0;
+ border-top: 1px solid #ccc;
+ border-bottom: 1px solid #ccc;
+ padding: 5px;
+}
+/* ]]> */
+</style>
+<link rel="stylesheet" href="/assets/css/syntax.css" type="text/css" />
+<link rel="stylesheet" href="/assets/css/font-awesome.css" type="text/css" />
+<link rel="alternate" type="application/atom+xml" href="/atom.xml" title="Atom feed">
+</head>
+<body>
+<a name="#top"></a>
+<div id="header">
+<div id="head">
+{% if page.title %}
+<h1> <a href="/">Nada AMIN</a> &rarr; {{ page.title }}<br/><span>&nbsp;</span></h1>
+{% else %}
+<h1>Nada AMIN<br/>
+<span lang="ar">
+ندى أمين
+</span>
+</h1>
+{% endif %}
+</div>
+<div id="info">
+<ul>
+<li><i class="icon-envelope-alt"></i><a href="mailto:namin@alum.mit.edu">namin@alum.mit.edu</a></li>
+<li><i class="icon-github"></i><a href="http://github.com/namin">github.com/namin</a></li>
+<li><i class="icon-pushpin"></i><a href="https://pinboard.in/u:namin">pinboard.in/u:namin</a></li>
+<li><i class="icon-twitter"></i><a href="http://twitter.com/nadamin">twitter.com/nadamin</a></li>
+<li><i class="icon-google-plus"></i><a href="http://scholar.google.com/citations?user=9cGEmcgAAAAJ">google scholar</a></li>
+</ul>
+</div>
+</div>
+
+<div id="content">
+{{ content }}
+</div>
+
+<div id="footer">
+{% if !page.title %}
+{% if page.previous %}
+<a href="{{ page.previous.url }}" class="prev" title="{{ page.previous.title }}"><i class="icon-chevron-left icon-large"></i></a>
+{% else %}
+<i class="icon-chevron-left icon-large disabled"></i>
+{% endif %}
+<a href="/"><i class="icon-chevron-up icon-large"></i></a>
+{% if page.next %}
+<a href="{{ page.next.url }}" class="next" title="{{ page.next.title }}"><i class="icon-chevron-right icon-large"></i></a>
+{% else %}
+<i class="icon-chevron-right icon-large disabled"></i>
+{% endif %}
+{% endif %}
+</div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+auto: true
+pygments: true
+permalink: /:title.html
+
+title : Nada Amin
+tagline: namin
+author :
+  name : Nada Amin
+  email : namin@alum.mit.edu
+  github : namin
+  twitter : nadamin
+
+production_url : http://namin.github.com
