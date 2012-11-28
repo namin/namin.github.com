@@ -25,9 +25,9 @@ We can think of a recursive definition as a tower of definitions, each one build
     Fn = (lambda (n) (if (= n 0) 1 (* n (Fn-1 (- n 1)))))
 {% endhighlight %}
 
-Our factorial definition is then the limit of Fn as n goes to infinity.
+Our factorial definition is then the limit of `Fn` as `n` goes to infinity.
 
-Of course, in Scheme, we can define Fn as a lambda by expanding `Fn-1`, then `Fn-2`, ..., `F0`. However, let's go a step further and abstract away the idea of a finite tower of definitions. All these definitions are similar, except for the call to the previously defined function. So let's just pass the previous function as a parameter (for good measure, we'll use curried paramters).
+Of course, in Scheme, we can define `Fn` as a `lambda` by expanding `Fn-1`, then `Fn-2`, ..., `F0`. However, let's go a step further and abstract away the idea of a finite tower of definitions. All these definitions are similar, except for the call to the previously defined function. So let's just pass the previous function as a parameter (for good measure, we'll use curried paramters).
 
 
 {% highlight scheme %}
