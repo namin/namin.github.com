@@ -1,54 +1,74 @@
-body {
- font-family: 'Lucida Grande', Verdana, Arial, sans-serif;
+/*****************************************************************************/
+/*
+/* Home
+/*
+/*****************************************************************************/
+.posts {
+  list-style-type: none;
+  margin-bottom: 2em;
 }
 
-h1, h2, h3, h4 {
- font-family: Garamond, "Century Schoolbook L", serif;
+.posts li {
+  line-height: 1.75em;
 }
 
-h1 [lang|="ar"] {
- font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
- text-align: right;
+.posts span {
+  color: #aaa;
+  font-size: 80%;
 }
-#header {
- overflow:hidden;
- xxposition:relative;
- background: #efefef;
- border-bottom: 1px solid #ccc;
- padding: 1em;
+
+/*****************************************************************************/
+/*
+/* Site
+/*
+/*****************************************************************************/
+
+.site {
+  font-size: 115%;
+  text-align: justify;
+  width: 42em;
+  margin: 3em auto 2em;
+  line-height: 1.5em;
 }
-#head {
- float: left;
+
+.meta {
+  color: #aaa;
 }
-#info {
- float: right;
- top: 2em;
- right: 2em;
+
+/*****************************************************************************/
+/*
+/* Posts
+/*
+/*****************************************************************************/
+
+/* standard */
+.post pre {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .4em;
 }
-#info ul {
- list-style: none;
+
+.post ul, .post ol {
+  margin-left: 1.35em;
 }
-#content {
- max-width: 60em;
- margin: 1em auto 1em auto;
+
+.post code {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .2em;
 }
-#footer {
- text-align: center;
- border-top: 1px solid #ccc;
- padding: 1em;
+
+.post pre code {
+  border: none;
 }
-#footer a:link, #footer a:visited {
- text-decoration: none;
+
+/* terminal */
+.post pre.terminal {
+  border: 1px solid #000;
+  background-color: #333;
+  color: #FFF;
 }
-.disabled {
- color: grey;
-}
-pre, code {
-  font-family: consolas, "Liberation Mono", monospace;
-}
-pre {
- background-color: #f0f0f0;
- border-top: 1px solid #ccc;
- border-bottom: 1px solid #ccc;
- padding: 5px;
+
+.post pre.terminal code {
+  background-color: #333;
 }
