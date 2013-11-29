@@ -27,11 +27,11 @@
 </div>
 <div id="info">
 <ul>
-<li><i class="icon-envelope-alt"></i><a href="mailto:namin@alum.mit.edu">namin@alum.mit.edu</a></li>
-<li><i class="icon-github"></i><a href="http://github.com/namin">github.com/namin</a></li>
-<li><i class="icon-pushpin"></i><a href="https://pinboard.in/u:namin">pinboard.in/u:namin</a></li>
-<li><i class="icon-twitter"></i><a href="http://twitter.com/nadamin">twitter.com/nadamin</a></li>
-<li><i class="icon-google-plus"></i><a href="http://scholar.google.com/citations?user=9cGEmcgAAAAJ">google scholar</a></li>
+<li><a href="mailto:namin@alum.mit.edu"><i class="fa fa-envelope-o"></i> namin@alum.mit.edu</a></li>
+<li><a href="http://github.com/namin"><i class="fa fa-github fa-lg"></i> github.com/namin</a></li>
+<li><a href="https://pinboard.in/u:namin"><i class="fa fa-paperclip fa-lg"></i> pinboard.in/u:namin</a></li>
+<li><a href="http://twitter.com/nadamin"><i class="fa fa-twitter fa-lg"></i> twitter.com/nadamin</a></li>
+<li><a href="http://scholar.google.com/citations?user=9cGEmcgAAAAJ"><i class="fa fa-google-plus fa-lg"></i> google scholar</a></li>
 </ul>
 </div>
 </div>
@@ -45,15 +45,15 @@
 <div id="footer">
 {% if !page.title %}
 {% if page.previous %}
-<a href="{{ page.previous.url }}" class="prev" title="{{ page.previous.title }}"><i class="icon-chevron-left icon-large"></i></a>
+<a href="{{ page.previous.url }}" class="prev" title="{{ page.previous.title }}"><i class="fa fa-chevron-left fa-lg"></i></a>
 {% else %}
-<i class="icon-chevron-left icon-large disabled"></i>
+<i class="fa fa-chevron-left fa-lg disabled"></i>
 {% endif %}
-<a href="/"><i class="icon-chevron-up icon-large"></i></a>
+<a href="/"><i class="fa fa-chevron-up fa-lg"></i></a>
 {% if page.next %}
-<a href="{{ page.next.url }}" class="next" title="{{ page.next.title }}"><i class="icon-chevron-right icon-large"></i></a>
+<a href="{{ page.next.url }}" class="next" title="{{ page.next.title }}"><i class="fa fa-chevron-right fa-lg"></i></a>
 {% else %}
-<i class="icon-chevron-right icon-large disabled"></i>
+<i class="fa fa-chevron-right fa-lg disabled"></i>
 {% endif %}
 {% endif %}
 </div>

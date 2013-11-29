@@ -24,9 +24,13 @@ h1 [lang|="ar"] {
  float: right;
  top: 2em;
  right: 2em;
+ line-height: 1.25em;
 }
 #info ul {
  list-style: none;
+}
+#info a:link, #info a:visited {
+ text-decoration: none;
 }
 #content {
  max-width: 42em;
