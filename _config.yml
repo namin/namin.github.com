@@ -10,3 +10,5 @@ author :
   twitter : nadamin
 
 production_url : http://namin.github.com
+
+markdown: kramdown
