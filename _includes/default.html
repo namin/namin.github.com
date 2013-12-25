@@ -13,9 +13,17 @@
 <link rel="alternate" type="application/atom+xml" href="/atom.xml" title="Atom feed">
 {% if page.codemirror %}
 <link rel="stylesheet" href="./assets/css/codemirror.css" type="text/css" />
+{% if page.codemirror == 'javascript' %}
+<link rel="stylesheet" href="./assets/css/codemirror_addon_lint.css" type="text/css" />
+{% endif %}
 <link rel="stylesheet" href="./assets/css/livecode.css" type="text/css" />
 <script src="./assets/js/codemirror.js"></script>
 <script src="./assets/js/codemirror_mode_{{ page.codemirror }}.js"></script>
+{% if page.codemirror == 'javascript' %}
+<script src="http://ajax.aspnetcdn.com/ajax/jshint/r07/jshint.js"></script>
+<script src="./assets/js/codemirror_addon_lint.js"></script>
+<script src="./assets/js/codemirror_addon_lint_{{ page.codemirror }}.js"></script>
+{% endif %}
 {% endif %}
 </head>
 <body>
