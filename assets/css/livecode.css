@@ -10,3 +10,5 @@
   overflow-y: hidden;
   overflow-x: auto;
 }
+/* work-around android zoom focus */
+textarea:focus { font-size: 16px!important}
