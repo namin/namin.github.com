@@ -1,0 +1,71 @@
+---
+layout: default
+title: Editor
+codemirror: 1
+---
+
+<script>
+var live_snippets = [];
+</script>
+
+<textarea id="snippet-header" style="display:none;">
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+  * { margin: 0; padding: 0; overflow: hidden;}
+  #canvas { display: block; }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;canvas id="canvas"&gt;&lt;/canvas&gt;
+&lt;script&gt;
+window.onload = function() {
+  var canvas = document.getElementById("canvas");
+  var ctx = canvas.getContext("2d");
+  var W = window.innerWidth, H = window.innerHeight;
+  canvas.width = W; canvas.height = H;
+</textarea>
+
+<textarea id="snippet-footer" style="display:none;">
+}
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</textarea>
+
+<iframe class="viewcode" id="viewcode-editor" height="150"></iframe>
+<textarea class="live" id="code-editor" name="code-editor" height="150">
+ctx.fillText(navigator.userAgent, 100, 100);
+</textarea>
+
+<script>
+live_snippets.push('code-editor');
+</script>
+
+<script>
+window.onload = function() {
+  for (var i=0; i<live_snippets.length; i++) {
+    (function(snippet) {
+    var delay;
+    var editor = CodeMirror.fromTextArea(document.getElementById(snippet), {
+    mode: 'javascript',
+    tabMode: 'indent'
+    });
+    editor.on('change', function() {
+      clearTimeout(delay);
+      delay = setTimeout(updatePreview, 300);
+    });
+    var header = document.getElementById('snippet-header');
+    var footer = document.getElementById('snippet-footer');
+    function updatePreview() {
+      var previewFrame = document.getElementById('view'+snippet);
+      var preview =  previewFrame.contentDocument ||  previewFrame.contentWindow.document;
+      preview.open();
+      preview.write(header.value+editor.getValue()+footer.value);
+      preview.close();
+    }
+    setTimeout(updatePreview, 300);
+   })(live_snippets[i]);
+ }
+}
+</script>
