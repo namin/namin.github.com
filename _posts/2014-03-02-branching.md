@@ -138,7 +138,9 @@ function loop()
     branch.x += Math.cos(branch.rw) * branch.speed;
     branch.y += Math.sin(branch.rw) * branch.speed;
     context.lineTo(branch.x, branch.y);
-    if (branch.life > branch.max_life || branch.x &lt; 0 || branch.y &lt; 0 || branch.x &gt; WIDTH || branch.y &gt; HEIGHT)
+    if (branch.life > branch.max_life ||
+        branch.x &lt; 0 || branch.y &lt; 0 ||
+        branch.x &gt; WIDTH || branch.y &gt; HEIGHT)
       branches.splice(i,1);
     if (Math.random() &gt; 0.95 && branches.length &lt; 1000)
     {
