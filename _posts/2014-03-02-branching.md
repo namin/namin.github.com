@@ -49,7 +49,7 @@ function init() {
   context = canvas.getContext("2d");
   context.fillStyle = "rgb(0, 0, 0)";
   context.fillRect (0, 0, WIDTH, HEIGHT);
-  branches = new Array();
+  branches = [];
   window.addEventListener('mousemove', onWindowMouseMove, false);
 }
 function onWindowMouseMove(event) {
@@ -70,7 +70,7 @@ function loop() {
       continue;
     }
     context.moveTo(branch.x, branch.y);
-    branch.rw += Math.random() - .5;
+    branch.rw += Math.random() - 0.5;
     branch.x += Math.cos(branch.rw);
     branch.y += Math.sin(branch.rw);
     context.lineTo(branch.x, branch.y);
@@ -85,7 +85,7 @@ var Branch = function(x, y) {
   this.x = x;
   this.y = y;
   this.rw = Math.random() * 360;
-}
+};
 </textarea>
 
 <script>
