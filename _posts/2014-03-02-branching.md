@@ -1,8 +1,12 @@
 ---
 layout: post
-title: Variations on "Branching is Fun" by @mr_doob
+title: Branching
 codemirror: javascript
 ---
+
+Some variations on
+_["Branching is Fun"](http://ricardocabello.com/blog/post/680)_ by
+[@mr_doob](http://twitter.com/mr_doob).
 
 <script>
 var live_snippets = [];
