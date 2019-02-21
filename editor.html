@@ -1,0 +1,64 @@
+<!doctype html>
+
+<title>CodeMirror: HTML mixed mode</title>
+<meta charset="utf-8"/>
+
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="./assets/css/syntax.css" type="text/css" />
+<link rel="stylesheet" href="./assets/css/default.css" type="text/css" />
+<link rel="stylesheet" href="./assets/css/main.css" type="text/css" />
+<link rel="stylesheet" href="./assets/css/livecode.css" type="text/css" />
+
+<link rel="stylesheet" href="./assets/codemirror/lib/codemirror.css">
+<script src="./assets/codemirror/lib/codemirror.js"></script>
+<script src="./assets/codemirror/addon/selection/selection-pointer.js"></script>
+<script src="./assets/codemirror/mode/xml/xml.js"></script>
+<script src="./assets/codemirror/mode/javascript/javascript.js"></script>
+<script src="./assets/codemirror/mode/css/css.js"></script>
+<script src="./assets/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+
+<article>
+<div id="content">
+<h2>HTML Mixed Mode Live Editor</h2>
+<form><textarea id="code" name="code">
+<html>
+  <div id="log">hello world!</div>
+  <script>
+	var log = document.getElementById("log");
+    function say(x) {
+      log.innerHTML += "<br>";
+      log.innerHTML += x;
+    }
+    say("2+2 is "+2+2);
+    say("2+2 is "+(2+2));
+  </script>
+</html>
+</textarea></form>
+
+<iframe class="viewcode" id="result" height="150"></iframe>
+</div>
+
+  <script>
+  (function() {
+    var delay;
+    var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+      mode: 'htmlmixed',
+      tabMode: 'indent',
+      selectionPointer: true
+    });
+    editor.on('change', function() {
+      clearTimeout(delay);
+      delay = setTimeout(updatePreview, 300);
+    });
+    function updatePreview() {
+      var previewFrame = document.getElementById('result');
+      var preview =  previewFrame.contentDocument ||  previewFrame.contentWindow.document;
+      preview.open();
+      preview.write(editor.getValue());
+      preview.close();
+    }
+    setTimeout(updatePreview, 300);
+  })();
+  </script>
+
+</article>
