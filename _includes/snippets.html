@@ -1,0 +1,36 @@
+<script>
+var live_snippets = [];
+</script>
+
+{{ content }}
+
+<script>
+window.onload = function() {
+  for (var i=0; i<live_snippets.length; i++) {
+    (function(snippet) {
+    var delay;
+    var editor = CodeMirror.fromTextArea(document.getElementById(snippet), {
+    mode: 'javascript',
+    tabMode: 'indent',
+    viewportMargin: Infinity,
+    gutters: ["CodeMirror-lint-markers"],
+    lint: true
+    });
+    editor.on('change', function() {
+      clearTimeout(delay);
+      delay = setTimeout(updatePreview, 300);
+    });
+    var header = document.getElementById('snippet-header');
+    var footer = document.getElementById('snippet-footer');
+    function updatePreview() {
+      var previewFrame = document.getElementById('view'+snippet);
+      var preview =  previewFrame.contentDocument ||  previewFrame.contentWindow.document;
+      preview.open();
+      preview.write(header.value+editor.getValue()+footer.value);
+      preview.close();
+    }
+    setTimeout(updatePreview, 300);
+   })(live_snippets[i]);
+ }
+}
+</script>

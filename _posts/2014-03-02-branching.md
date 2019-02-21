@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: snippets
 title: Branching
 codemirror: javascript
 ---
@@ -7,10 +7,6 @@ codemirror: javascript
 Some variations on
 _["Branching is Fun"](http://ricardocabello.com/blog/post/680)_ by
 [@mr_doob](http://twitter.com/mr_doob).
-
-<script>
-var live_snippets = [];
-</script>
 
 <textarea id="snippet-header" style="display:none;">
 &lt;!DOCTYPE HTML&gt;
@@ -308,35 +304,4 @@ var Branch = function(x, y, max_life) {
 
 <script>
 live_snippets.push('code-branching-01-spite-mrdoob');
-</script>
-
-<script>
-window.onload = function() {
-  for (var i=0; i<live_snippets.length; i++) {
-    (function(snippet) {
-    var delay;
-    var editor = CodeMirror.fromTextArea(document.getElementById(snippet), {
-    mode: 'javascript',
-    tabMode: 'indent',
-    viewportMargin: Infinity,
-    gutters: ["CodeMirror-lint-markers"],
-    lint: true
-    });
-    editor.on('change', function() {
-      clearTimeout(delay);
-      delay = setTimeout(updatePreview, 300);
-    });
-    var header = document.getElementById('snippet-header');
-    var footer = document.getElementById('snippet-footer');
-    function updatePreview() {
-      var previewFrame = document.getElementById('view'+snippet);
-      var preview =  previewFrame.contentDocument ||  previewFrame.contentWindow.document;
-      preview.open();
-      preview.write(header.value+editor.getValue()+footer.value);
-      preview.close();
-    }
-    setTimeout(updatePreview, 300);
-   })(live_snippets[i]);
- }
-}
 </script>
