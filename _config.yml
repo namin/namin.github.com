@@ -1,4 +1,4 @@
-pygments: true
+rouge: true
 permalink: /:title.html
 
 title : Nada Amin
