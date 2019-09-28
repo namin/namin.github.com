@@ -217,4 +217,4 @@ idea of recursion.
 ### Bibliography ###
 
 * [The Little Schemer, Chapter 9](http://www.ccs.neu.edu/home/matthias/BTLS/)
-* [Richard Gabriel, the Why of Y](http://www.dreamsongs.com/NewFiles/WhyOfY.pdf)
+* [Richard Gabriel, the Why of Y](http://www.dreamsongs.com/Files/WhyOfY.pdf)
