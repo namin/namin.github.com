@@ -3,12 +3,30 @@ layout: default
 title: namin's Github World
 ---
 
+<script
+  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+  crossorigin="anonymous"></script>
+
+<script>
+  var topic_select = function(topic) {
+      $('.repo').hide()
+      $('.'+topic).show()
+      return false;
+  };
+</script>
+
+<style type="text/css">
+#content {
+    max-width: none;
+}
+div.repo_list {
+  text-align: left;
+}
+</style>
 <style type="text/css">
 ul.topic_cloud li {
     margin-top: 0.2em;
-}
-#content {
-    max-width: none;
 }
 @media only screen and (min-width: 768px) {
     div.my_world {
@@ -28,9 +46,6 @@ ul.topic_cloud li {
     margin-top: 0.2em;
 }
 }
-  div.repo_list {
-  text-align: left;
-   }
   span.name {
   font-size: 1.2em;
   }
@@ -66,291 +81,292 @@ ul.topic_cloud li {
 <div class="topic_cloud">
 
 <ul class="topic_cloud">
-<li class="count1"><a href="#abstract-interpretation">abstract-interpretation</a></li>
-<li class="count4"><a href="#ai">ai</a></li>
-<li class="count2"><a href="#binders">binders</a></li>
-<li class="count3"><a href="#c">c</a></li>
-<li class="count5"><a href="#clojure">clojure</a></li>
-<li class="count1"><a href="#collapse-towers">collapse-towers</a></li>
-<li class="count3"><a href="#common-lisp">common-lisp</a></li>
-<li class="count1"><a href="#communication-bootstrapping">communication-bootstrapping</a></li>
-<li class="count1"><a href="#compiler">compiler</a></li>
-<li class="count1"><a href="#compiler-construction">compiler-construction</a></li>
-<li class="count1"><a href="#composition">composition</a></li>
-<li class="count2"><a href="#constraints">constraints</a></li>
-<li class="count2"><a href="#coq">coq</a></li>
-<li class="count2"><a href="#dafny">dafny</a></li>
-<li class="count1"><a href="#expert-system">expert-system</a></li>
-<li class="count1"><a href="#frama-c">frama-c</a></li>
-<li class="count5"><a href="#generative-programming">generative-programming</a></li>
-<li class="count1"><a href="#harmony">harmony</a></li>
-<li class="count4"><a href="#logic-programming">logic-programming</a></li>
-<li class="count1"><a href="#meta-reasoning">meta-reasoning</a></li>
-<li class="count2"><a href="#meta-theory">meta-theory</a></li>
-<li class="count1"><a href="#metabolic-network">metabolic-network</a></li>
-<li class="count2"><a href="#metaprogramming">metaprogramming</a></li>
-<li class="count5"><a href="#minikanren">minikanren</a></li>
-<li class="count2"><a href="#multi-stage-programming">multi-stage-programming</a></li>
-<li class="count1"><a href="#music">music</a></li>
-<li class="count1"><a href="#ncats-translator">ncats-translator</a></li>
-<li class="count2"><a href="#oop">oop</a></li>
-<li class="count1"><a href="#overtone">overtone</a></li>
-<li class="count8"><a href="#paper-implementations">paper-implementations</a></li>
-<li class="count1"><a href="#plt-redex">plt-redex</a></li>
-<li class="count1"><a href="#program-transformations">program-transformations</a></li>
-<li class="count2"><a href="#prolog">prolog</a></li>
-<li class="count1"><a href="#python">python</a></li>
-<li class="count2"><a href="#reasoning">reasoning</a></li>
-<li class="count4"><a href="#reflection">reflection</a></li>
-<li class="count3"><a href="#scala">scala</a></li>
-<li class="count11"><a href="#scheme">scheme</a></li>
-<li class="count1"><a href="#smt">smt</a></li>
-<li class="count1"><a href="#theorem-prover">theorem-prover</a></li>
-<li class="count3"><a href="#towers">towers</a></li>
-<li class="count1"><a href="#tutorial">tutorial</a></li>
-<li class="count1"><a href="#twelf">twelf</a></li>
-<li class="count1"><a href="#verification">verification</a></li>
-<li class="count1"><a href="#workshop">workshop</a></li>
-<li class="count1"><a href="#x86">x86</a></li>
+<li class="count1"><a href="#" onclick="topic_select('abstract-interpretation');">abstract-interpretation</a></li>
+<li class="count4"><a href="#" onclick="topic_select('ai');">ai</a></li>
+<li class="count2"><a href="#" onclick="topic_select('binders');">binders</a></li>
+<li class="count3"><a href="#" onclick="topic_select('c');">c</a></li>
+<li class="count5"><a href="#" onclick="topic_select('clojure');">clojure</a></li>
+<li class="count1"><a href="#" onclick="topic_select('collapse-towers');">collapse-towers</a></li>
+<li class="count3"><a href="#" onclick="topic_select('common-lisp');">common-lisp</a></li>
+<li class="count1"><a href="#" onclick="topic_select('communication-bootstrapping');">communication-bootstrapping</a></li>
+<li class="count1"><a href="#" onclick="topic_select('compiler');">compiler</a></li>
+<li class="count1"><a href="#" onclick="topic_select('compiler-construction');">compiler-construction</a></li>
+<li class="count1"><a href="#" onclick="topic_select('composition');">composition</a></li>
+<li class="count2"><a href="#" onclick="topic_select('constraints');">constraints</a></li>
+<li class="count2"><a href="#" onclick="topic_select('coq');">coq</a></li>
+<li class="count2"><a href="#" onclick="topic_select('dafny');">dafny</a></li>
+<li class="count1"><a href="#" onclick="topic_select('expert-system');">expert-system</a></li>
+<li class="count1"><a href="#" onclick="topic_select('frama-c');">frama-c</a></li>
+<li class="count5"><a href="#" onclick="topic_select('generative-programming');">generative-programming</a></li>
+<li class="count1"><a href="#" onclick="topic_select('harmony');">harmony</a></li>
+<li class="count4"><a href="#" onclick="topic_select('logic-programming');">logic-programming</a></li>
+<li class="count1"><a href="#" onclick="topic_select('meta-reasoning');">meta-reasoning</a></li>
+<li class="count2"><a href="#" onclick="topic_select('meta-theory');">meta-theory</a></li>
+<li class="count1"><a href="#" onclick="topic_select('metabolic-network');">metabolic-network</a></li>
+<li class="count2"><a href="#" onclick="topic_select('metaprogramming');">metaprogramming</a></li>
+<li class="count5"><a href="#" onclick="topic_select('minikanren');">minikanren</a></li>
+<li class="count2"><a href="#" onclick="topic_select('multi-stage-programming');">multi-stage-programming</a></li>
+<li class="count1"><a href="#" onclick="topic_select('music');">music</a></li>
+<li class="count1"><a href="#" onclick="topic_select('ncats-translator');">ncats-translator</a></li>
+<li class="count2"><a href="#" onclick="topic_select('oop');">oop</a></li>
+<li class="count1"><a href="#" onclick="topic_select('overtone');">overtone</a></li>
+<li class="count8"><a href="#" onclick="topic_select('paper-implementations');">paper-implementations</a></li>
+<li class="count1"><a href="#" onclick="topic_select('plt-redex');">plt-redex</a></li>
+<li class="count1"><a href="#" onclick="topic_select('program-transformations');">program-transformations</a></li>
+<li class="count2"><a href="#" onclick="topic_select('prolog');">prolog</a></li>
+<li class="count1"><a href="#" onclick="topic_select('python');">python</a></li>
+<li class="count2"><a href="#" onclick="topic_select('reasoning');">reasoning</a></li>
+<li class="count4"><a href="#" onclick="topic_select('reflection');">reflection</a></li>
+<li class="count3"><a href="#" onclick="topic_select('scala');">scala</a></li>
+<li class="count11"><a href="#" onclick="topic_select('scheme');">scheme</a></li>
+<li class="count1"><a href="#" onclick="topic_select('smt');">smt</a></li>
+<li class="count1"><a href="#" onclick="topic_select('theorem-prover');">theorem-prover</a></li>
+<li class="count3"><a href="#" onclick="topic_select('towers');">towers</a></li>
+<li class="count1"><a href="#" onclick="topic_select('tutorial');">tutorial</a></li>
+<li class="count1"><a href="#" onclick="topic_select('twelf');">twelf</a></li>
+<li class="count1"><a href="#" onclick="topic_select('verification');">verification</a></li>
+<li class="count1"><a href="#" onclick="topic_select('workshop');">workshop</a></li>
+<li class="count1"><a href="#" onclick="topic_select('x86');">x86</a></li>
 </ul>
+
 
 </div>
 
 <div class="repo_list">
 
 <ul class="repo_list">
-<li class="repo">
+<li class="repo scheme x86 c compiler compiler-construction paper-implementations">
 <span class="name"><a href="https://github.com/namin/inc">namin/inc</a></span>
 <br/>
 <span class="description">an incremental approach to compiler construction</span>
 <br/>
 <span class="topics">[scheme, x86, c, compiler, compiler-construction, paper-implementations]</span>
 </li>
-<li class="repo">
+<li class="repo ">
 <span class="name"><a href="https://github.com/readevalprintlove/black">readevalprintlove/black</a></span> <span class="livecode">(<a href="http://io.livecode.ch/learn/"readevalprintlove/black">livecode</a>)</span>
 <br/>
 <span class="description">Kenichi Asai's reflective programming language Black</span>
 <br/>
 <span class="topics">[]</span>
 </li>
-<li class="repo">
+<li class="repo meta-theory twelf plt-redex coq dafny oop">
 <span class="name"><a href="https://github.com/namin/dot">namin/dot</a></span> <span class="web">(<a href="http://lamp.epfl.ch/~amin/dot/">web</a>)</span>
 <br/>
 <span class="description">formalization of the Dependent Object Types (DOT) calculus</span>
 <br/>
 <span class="topics">[meta-theory, twelf, plt-redex, coq, dafny, oop]</span>
 </li>
-<li class="repo">
+<li class="repo ">
 <span class="name"><a href="https://github.com/namin/io.livecode.ch">namin/io.livecode.ch</a></span> <span class="web">(<a href="http://io.livecode.ch">web</a>)</span>
 <br/>
 <span class="description">interactive programming tutorials, powered by Github and Docker</span>
 <br/>
 <span class="topics">[]</span>
 </li>
-<li class="repo">
+<li class="repo generative-programming scala tutorial c">
 <span class="name"><a href="https://github.com/scala-lms/tutorials">scala-lms/tutorials</a></span> <span class="web">(<a href="http://scala-lms.github.io/tutorials">web</a>)</span> <span class="livecode">(<a href="http://io.livecode.ch/learn/"scala-lms/tutorials">livecode</a>)</span>
 <br/>
 <span class="description">Tutorials on Lightweight Modular Staging</span>
 <br/>
 <span class="topics">[generative-programming, scala, tutorial, c]</span>
 </li>
-<li class="repo">
+<li class="repo clojure prolog abstract-interpretation metaprogramming logic-programming paper-implementations binders">
 <span class="name"><a href="https://github.com/namin/logically">namin/logically</a></span>
 <br/>
 <span class="description">explorations in core.logic</span>
 <br/>
 <span class="topics">[clojure, prolog, abstract-interpretation, metaprogramming, logic-programming, paper-implementations, binders]</span>
 </li>
-<li class="repo">
+<li class="repo scheme minikanren multi-stage-programming towers collapse-towers generative-programming">
 <span class="name"><a href="https://github.com/namin/staged-miniKanren">namin/staged-miniKanren</a></span>
 <br/>
 <span class="description">staged relational interpreters: running with holes, faster</span>
 <br/>
 <span class="topics">[scheme, minikanren, multi-stage-programming, towers, collapse-towers, generative-programming]</span>
 </li>
-<li class="repo">
+<li class="repo ">
 <span class="name"><a href="https://github.com/namin/unsound">namin/unsound</a></span> <span class="web">(<a href="http://io.livecode.ch/learn/namin/unsound">web</a>)</span> <span class="livecode">(<a href="http://io.livecode.ch/learn/"namin/unsound">livecode</a>)</span>
 <br/>
 <span class="description">Artifact for OOPSLA'16 Paper on Unsoundness of Java and Scala</span>
 <br/>
 <span class="topics">[]</span>
 </li>
-<li class="repo">
+<li class="repo ">
 <span class="name"><a href="https://github.com/TiarkRompf/collapsing-towers">TiarkRompf/collapsing-towers</a></span>
 <br/>
 <span class="description">Collapsing Towers of Interpreters</span>
 <br/>
 <span class="topics">[]</span>
 </li>
-<li class="repo">
+<li class="repo ">
 <span class="name"><a href="https://github.com/TiarkRompf/minidot">TiarkRompf/minidot</a></span> <span class="livecode">(<a href="http://io.livecode.ch/learn/"TiarkRompf/minidot">livecode</a>)</span>
 <br/>
 <span class="description">Dependent Object Types (DOT), bottom up</span>
 <br/>
 <span class="topics">[]</span>
 </li>
-<li class="repo">
+<li class="repo scheme generative-programming metaprogramming towers">
 <span class="name"><a href="https://github.com/namin/pink">namin/pink</a></span>
 <br/>
 <span class="description">Collapsing Towers of Interpreters (in Scheme)</span>
 <br/>
 <span class="topics">[scheme, generative-programming, metaprogramming, towers]</span>
 </li>
-<li class="repo">
+<li class="repo ">
 <span class="name"><a href="https://github.com/namin/propagators">namin/propagators</a></span> <span class="web">(<a href="http://groups.csail.mit.edu/mac/users/gjs/propagators/">web</a>)</span>
 <br/>
 <span class="description">the Art of the Propagator</span>
 <br/>
 <span class="topics">[]</span>
 </li>
-<li class="repo">
+<li class="repo ">
 <span class="name"><a href="https://github.com/webyrd/webmk">webyrd/webmk</a></span> <span class="livecode">(<a href="http://io.livecode.ch/learn/"webyrd/webmk">livecode</a>)</span>
 <br/>
 <span class="description">miniKanren for interactive tutorials on the web</span>
 <br/>
 <span class="topics">[]</span>
 </li>
-<li class="repo">
+<li class="repo music harmony composition clojure overtone">
 <span class="name"><a href="https://github.com/namin/metasolfeggio">namin/metasolfeggio</a></span>
 <br/>
 <span class="description">computer-aided harmony and counterpoint</span>
 <br/>
 <span class="topics">[music, harmony, composition, clojure, overtone]</span>
 </li>
-<li class="repo">
+<li class="repo metabolic-network common-lisp ai reasoning expert-system ncats-translator">
 <span class="name"><a href="https://github.com/namin/biohacker">namin/biohacker</a></span>
 <br/>
 <span class="description">debugging biological networks to reach coherence, completeness and consistency</span>
 <br/>
 <span class="topics">[metabolic-network, common-lisp, ai, reasoning, expert-system, ncats-translator]</span>
 </li>
-<li class="repo">
+<li class="repo scala frama-c multi-stage-programming verification generative-programming c">
 <span class="name"><a href="https://github.com/namin/lms-verify">namin/lms-verify</a></span>
 <br/>
 <span class="description">generative programming & verification</span>
 <br/>
 <span class="topics">[scala, frama-c, multi-stage-programming, verification, generative-programming, c]</span>
 </li>
-<li class="repo">
+<li class="repo scheme minikanren logic-programming constraints smt">
 <span class="name"><a href="https://github.com/namin/clpsmt-miniKanren">namin/clpsmt-miniKanren</a></span> <span class="livecode">(<a href="http://io.livecode.ch/learn/"namin/clpsmt-miniKanren">livecode</a>)</span>
 <br/>
 <span class="description">CLP(SMT) on top of miniKanren</span>
 <br/>
 <span class="topics">[scheme, minikanren, logic-programming, constraints, smt]</span>
 </li>
-<li class="repo">
+<li class="repo generative-programming reflection scheme scala towers">
 <span class="name"><a href="https://github.com/namin/lms-black">namin/lms-black</a></span>
 <br/>
 <span class="description">compiling a reflective language</span>
 <br/>
 <span class="topics">[generative-programming, reflection, scheme, scala, towers]</span>
 </li>
-<li class="repo">
+<li class="repo scheme clojure minikanren theorem-prover">
 <span class="name"><a href="https://github.com/namin/leanTAP">namin/leanTAP</a></span>
 <br/>
 <span class="description">A Declarative Theorem Prover for First-Order Classical Logic</span>
 <br/>
 <span class="topics">[scheme, clojure, minikanren, theorem-prover]</span>
 </li>
-<li class="repo">
+<li class="repo ">
 <span class="name"><a href="https://github.com/namin/grk2clj">namin/grk2clj</a></span>
 <br/>
 <span class="description">From Greek to Clojure, Clojure/conj 2013</span>
 <br/>
 <span class="topics">[]</span>
 </li>
-<li class="repo">
+<li class="repo scheme workshop program-transformations">
 <span class="name"><a href="https://github.com/namin/lambdajam">namin/lambdajam</a></span>
 <br/>
 <span class="description">Workshop on Program Transformations at Lambda Jam 2013</span>
 <br/>
 <span class="topics">[scheme, workshop, program-transformations]</span>
 </li>
-<li class="repo">
+<li class="repo scheme minikanren prolog logic-programming constraints paper-implementations">
 <span class="name"><a href="https://github.com/namin/clpset-miniKanren">namin/clpset-miniKanren</a></span>
 <br/>
 <span class="description">CLP(Set) in miniKanren</span>
 <br/>
 <span class="topics">[scheme, minikanren, prolog, logic-programming, constraints, paper-implementations]</span>
 </li>
-<li class="repo">
+<li class="repo clojure minikanren paper-implementations">
 <span class="name"><a href="https://github.com/namin/minikanren-confo">namin/minikanren-confo</a></span>
 <br/>
 <span class="description">core.logic.nominal at the minikanren confo 2013</span>
 <br/>
 <span class="topics">[clojure, minikanren, paper-implementations]</span>
 </li>
-<li class="repo">
+<li class="repo ">
 <span class="name"><a href="https://github.com/namin/TAPL-in-miniKanren-cKanren-core.logic">namin/TAPL-in-miniKanren-cKanren-core.logic</a></span>
 <br/>
 <span class="description">Translation of Pierce's 'Types and Programming Languages' into miniKanren/core.logic</span>
 <br/>
 <span class="topics">[]</span>
 </li>
-<li class="repo">
+<li class="repo dafny coq meta-theory binders">
 <span class="name"><a href="https://github.com/namin/dafny-sandbox">namin/dafny-sandbox</a></span> <span class="web">(<a href="http://research.microsoft.com/en-us/projects/dafny/">web</a>)</span>
 <br/>
 <span class="description">Dafny for Metatheory of Programming Languages</span>
 <br/>
 <span class="topics">[dafny, coq, meta-theory, binders]</span>
 </li>
-<li class="repo">
+<li class="repo scheme reflection oop">
 <span class="name"><a href="https://github.com/namin/rop">namin/rop</a></span>
 <br/>
 <span class="description">reflection-oriented programming</span>
 <br/>
 <span class="topics">[scheme, reflection, oop]</span>
 </li>
-<li class="repo">
+<li class="repo clojure paper-implementations">
 <span class="name"><a href="https://github.com/namin/steps">namin/steps</a></span>
 <br/>
 <span class="description">open, extensible composition models</span>
 <br/>
 <span class="topics">[clojure, paper-implementations]</span>
 </li>
-<li class="repo">
+<li class="repo ">
 <span class="name"><a href="https://github.com/namin/sav">namin/sav</a></span> <span class="web">(<a href="http://lara.epfl.ch/w/sav12:top">web</a>)</span>
 <br/>
 <span class="description">Course Project in Synthesis, Analysis and Verification in Scala</span>
 <br/>
 <span class="topics">[]</span>
 </li>
-<li class="repo">
+<li class="repo reflection scheme">
 <span class="name"><a href="https://github.com/namin/refl-instr">namin/refl-instr</a></span> <span class="livecode">(<a href="http://io.livecode.ch/learn/"namin/refl-instr">livecode</a>)</span>
 <br/>
 <span class="description">reflective architectures that instrument and reify the computation steps</span>
 <br/>
 <span class="topics">[reflection, scheme]</span>
 </li>
-<li class="repo">
+<li class="repo scheme python communication-bootstrapping paper-implementations ai">
 <span class="name"><a href="https://github.com/namin/Communication-Bootstrapping-v1">namin/Communication-Bootstrapping-v1</a></span>
 <br/>
 <span class="description">appendix of Jake Beal's master thesis (2002)</span>
 <br/>
 <span class="topics">[scheme, python, communication-bootstrapping, paper-implementations, ai]</span>
 </li>
-<li class="repo">
+<li class="repo common-lisp paper-implementations ai">
 <span class="name"><a href="https://github.com/namin/hallucinations">namin/hallucinations</a></span> <span class="web">(<a href="http://www.aaai.org/Papers/Symposia/Fall/2008/FS-08-06/FS08-06-002.pdf">web</a>)</span>
 <br/>
 <span class="description">Original Code for Engineered Robustness by Controlled Hallucination (AAAI 2008) by Beal and Sussman</span>
 <br/>
 <span class="topics">[common-lisp, paper-implementations, ai]</span>
 </li>
-<li class="repo">
+<li class="repo ">
 <span class="name"><a href="https://github.com/namin/MusicalBubbles">namin/MusicalBubbles</a></span>
 <br/>
 <span class="description"></span>
 <br/>
 <span class="topics">[]</span>
 </li>
-<li class="repo">
+<li class="repo ">
 <span class="name"><a href="https://github.com/namin/lms-regexp">namin/lms-regexp</a></span>
 <br/>
 <span class="description"></span>
 <br/>
 <span class="topics">[]</span>
 </li>
-<li class="repo">
+<li class="repo common-lisp ai reflection reasoning meta-reasoning logic-programming paper-implementations">
 <span class="name"><a href="https://github.com/namin/GETFOL">namin/GETFOL</a></span> <span class="web">(<a href="http://io.livecode.ch/learn/namin/GETFOL">web</a>)</span> <span class="livecode">(<a href="http://io.livecode.ch/learn/"namin/GETFOL">livecode</a>)</span>
 <br/>
 <span class="description">FOL Software Archaeology</span>
@@ -358,5 +374,6 @@ ul.topic_cloud li {
 <span class="topics">[common-lisp, ai, reflection, reasoning, meta-reasoning, logic-programming, paper-implementations]</span>
 </li>
 </ul>
+
 </div>
 </div>
