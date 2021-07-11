@@ -4,13 +4,29 @@ title: namin's Github World
 ---
 
 <style type="text/css">
+div.my_world {
+    margin-left: -40%;
+    margin-right: -40%;
+  display: flex;
+}
+
+div.topic_cloud {
+  width: 60%;
+  flex: 0 0 50%;
+}
+
+div.repo_list {
+  flex: 1;
+}
   div.repo_list {
-  width: 90%;
-  margin: auto;
   text-align: left;
+  float: right;
   }
   span.name {
   font-size: 1.2em;
+  }
+  .repo_list a:hover {
+      background-color: rgba(255, 255, 0, 0.4);
   }
   .topic_cloud a:link {
   text-decoration: none;
@@ -20,8 +36,6 @@ title: namin's Github World
   text-decoration: underline;
   }
   div.topic_cloud {
-  width: 100%;
-  margin: auto;
   }
   ul.topic_cloud li {
       display: inline;
@@ -40,6 +54,7 @@ title: namin's Github World
   .count11 { font-size: 6em; }
 </style>
 
+<div class="my_world">
 <div class="topic_cloud">
 
 <ul class="topic_cloud">
@@ -336,4 +351,4 @@ title: namin's Github World
 </li>
 </ul>
 </div>
-
+</div>
