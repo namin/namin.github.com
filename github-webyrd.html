@@ -95,6 +95,9 @@ ul.topic_cloud li {
 <div class="my_world">
 <div class="topic_cloud">
 <ul class="topic_cloud">
+<li class="count1"><a href="#top" onclick="topic_select('minikanren');">minikanren</a></li>
+<li class="count1"><a href="#top" onclick="topic_select('ncats-translator');">ncats-translator</a></li>
+<li class="count1"><a href="#top" onclick="topic_select('racket');">racket</a></li>
 </ul>
 </div>
 <div id="top" class="repo_list">
@@ -105,6 +108,13 @@ ul.topic_cloud li {
 <span class="description">Prototype smart text editor</span>
 <br/>
 <span class="topics">[]</span>
+</li>
+<li class="repo racket minikanren ncats-translator">
+<span class="name"><a href="https://github.com/webyrd/mediKanren">webyrd/mediKanren</a></span>
+<br/>
+<span class="description">Proof-of-concept for reasoning over the SemMedDB knowledge base, using miniKanren + heuristics + indexing.</span>
+<br/>
+<span class="topics">[<a href="#top" onclick="topic_select('racket');">racket</a>, <a href="#top" onclick="topic_select('minikanren');">minikanren</a>, <a href="#top" onclick="topic_select('ncats-translator');">ncats-translator</a>]</span>
 </li>
 <li class="repo ">
 <span class="name"><a href="https://github.com/webyrd/miniKanren">webyrd/miniKanren</a></span>
@@ -117,6 +127,13 @@ ul.topic_cloud li {
 <span class="name"><a href="https://github.com/TheReasonedSchemer2ndEd/CodeFromTheReasonedSchemer2ndEd">TheReasonedSchemer2ndEd/CodeFromTheReasonedSchemer2ndEd</a></span> <span class="web">(<a href="https://mitpress.mit.edu/books/reasoned-schemer-second-edition">web</a>)</span>
 <br/>
 <span class="description">Code from Chapter 10 & Appendix A, implementation, and Chapters 7 & 8, arithmetic</span>
+<br/>
+<span class="topics">[]</span>
+</li>
+<li class="repo ">
+<span class="name"><a href="https://github.com/webyrd/probKanren">webyrd/probKanren</a></span>
+<br/>
+<span class="description">Probabilistic miniKanren</span>
 <br/>
 <span class="topics">[]</span>
 </li>
@@ -135,13 +152,6 @@ ul.topic_cloud li {
 <span class="topics">[]</span>
 </li>
 <li class="repo ">
-<span class="name"><a href="https://github.com/webyrd/probKanren">webyrd/probKanren</a></span>
-<br/>
-<span class="description">Probabilistic miniKanren</span>
-<br/>
-<span class="topics">[]</span>
-</li>
-<li class="repo ">
 <span class="name"><a href="https://github.com/webyrd/TAPL-in-miniKanren-cKanren-core.logic">webyrd/TAPL-in-miniKanren-cKanren-core.logic</a></span>
 <br/>
 <span class="description">Translation of Pierce's 'Types and Programming Languages' into miniKanren/core.logic</span>
@@ -156,13 +166,6 @@ ul.topic_cloud li {
 <span class="topics">[]</span>
 </li>
 <li class="repo ">
-<span class="name"><a href="https://github.com/webyrd/anti-unification">webyrd/anti-unification</a></span>
-<br/>
-<span class="description">Functional implementation of anti-unification algorithm for multiple terms</span>
-<br/>
-<span class="topics">[]</span>
-</li>
-<li class="repo ">
 <span class="name"><a href="https://github.com/webyrd/miniKanren-hangout-summaries">webyrd/miniKanren-hangout-summaries</a></span>
 <br/>
 <span class="description">Summaries of intro and advanced miniKanren hangout series</span>
@@ -170,16 +173,9 @@ ul.topic_cloud li {
 <span class="topics">[]</span>
 </li>
 <li class="repo ">
-<span class="name"><a href="https://github.com/webyrd/cato">webyrd/cato</a></span>
+<span class="name"><a href="https://github.com/webyrd/normalization-by-evaluation">webyrd/normalization-by-evaluation</a></span>
 <br/>
-<span class="description">Concatenative relational interpreter in miniKanren</span>
-<br/>
-<span class="topics">[]</span>
-</li>
-<li class="repo ">
-<span class="name"><a href="https://github.com/webyrd/alphaKanren">webyrd/alphaKanren</a></span>
-<br/>
-<span class="description">Nominal logic programming extensions to miniKanren, based on alphaProlog.</span>
+<span class="description">Normalization-by-evaluation in miniKanren</span>
 <br/>
 <span class="topics">[]</span>
 </li>
@@ -191,16 +187,30 @@ ul.topic_cloud li {
 <span class="topics">[]</span>
 </li>
 <li class="repo ">
-<span class="name"><a href="https://github.com/webyrd/hindley-milner-type-inferencer">webyrd/hindley-milner-type-inferencer</a></span>
+<span class="name"><a href="https://github.com/webyrd/cato">webyrd/cato</a></span>
 <br/>
-<span class="description">Relational Hindley-Milner type inferencer in miniKanren.  Supports polymorphic 'let'.  Performs type habitation.</span>
+<span class="description">Concatenative relational interpreter in miniKanren</span>
 <br/>
 <span class="topics">[]</span>
 </li>
 <li class="repo ">
-<span class="name"><a href="https://github.com/webyrd/cool-relational-interpreter-examples">webyrd/cool-relational-interpreter-examples</a></span>
+<span class="name"><a href="https://github.com/webyrd/anti-unification">webyrd/anti-unification</a></span>
 <br/>
-<span class="description">Fun, interesting, and thought-provoking examples of relational Scheme interpreters at work</span>
+<span class="description">Functional implementation of anti-unification algorithm for multiple terms</span>
+<br/>
+<span class="topics">[]</span>
+</li>
+<li class="repo ">
+<span class="name"><a href="https://github.com/webyrd/alphaKanren">webyrd/alphaKanren</a></span>
+<br/>
+<span class="description">Nominal logic programming extensions to miniKanren, based on alphaProlog.</span>
+<br/>
+<span class="topics">[]</span>
+</li>
+<li class="repo ">
+<span class="name"><a href="https://github.com/webyrd/hindley-milner-type-inferencer">webyrd/hindley-milner-type-inferencer</a></span>
+<br/>
+<span class="description">Relational Hindley-Milner type inferencer in miniKanren.  Supports polymorphic 'let'.  Performs type habitation.</span>
 <br/>
 <span class="topics">[]</span>
 </li>
@@ -219,16 +229,16 @@ ul.topic_cloud li {
 <span class="topics">[]</span>
 </li>
 <li class="repo ">
-<span class="name"><a href="https://github.com/webyrd/declarative-semantics">webyrd/declarative-semantics</a></span>
+<span class="name"><a href="https://github.com/webyrd/cool-relational-interpreter-examples">webyrd/cool-relational-interpreter-examples</a></span>
 <br/>
-<span class="description">miniKanren implementation of ' Declarative semantics for functional languages: compositional, extensional, and elementary' by Jeremy Siek.</span>
+<span class="description">Fun, interesting, and thought-provoking examples of relational Scheme interpreters at work</span>
 <br/>
 <span class="topics">[]</span>
 </li>
 <li class="repo ">
-<span class="name"><a href="https://github.com/webyrd/normalization-by-evaluation">webyrd/normalization-by-evaluation</a></span>
+<span class="name"><a href="https://github.com/webyrd/declarative-semantics">webyrd/declarative-semantics</a></span>
 <br/>
-<span class="description">Normalization-by-evaluation in miniKanren</span>
+<span class="description">miniKanren implementation of ' Declarative semantics for functional languages: compositional, extensional, and elementary' by Jeremy Siek.</span>
 <br/>
 <span class="topics">[]</span>
 </li>
@@ -247,6 +257,13 @@ ul.topic_cloud li {
 <span class="topics">[]</span>
 </li>
 <li class="repo ">
+<span class="name"><a href="https://github.com/webyrd/tree-automata">webyrd/tree-automata</a></span>
+<br/>
+<span class="description">Tree-automata-based run-time type constraints for miniKanren</span>
+<br/>
+<span class="topics">[]</span>
+</li>
+<li class="repo ">
 <span class="name"><a href="https://github.com/webyrd/set-constraints">webyrd/set-constraints</a></span>
 <br/>
 <span class="description">Stolzenburg-style set constraints</span>
@@ -261,6 +278,13 @@ ul.topic_cloud li {
 <span class="topics">[]</span>
 </li>
 <li class="repo ">
+<span class="name"><a href="https://github.com/webyrd/tabling">webyrd/tabling</a></span>
+<br/>
+<span class="description">Tabling code for miniKanren.  Only handles unification constraints, and has various limitations.</span>
+<br/>
+<span class="topics">[]</span>
+</li>
+<li class="repo ">
 <span class="name"><a href="https://github.com/webyrd/Strange-Loop-2014">webyrd/Strange-Loop-2014</a></span>
 <br/>
 <span class="description">Program Synthesis in miniKanren</span>
@@ -268,9 +292,16 @@ ul.topic_cloud li {
 <span class="topics">[]</span>
 </li>
 <li class="repo ">
-<span class="name"><a href="https://github.com/webyrd/tabling">webyrd/tabling</a></span>
+<span class="name"><a href="https://github.com/webyrd/n-grams-for-synthesis">webyrd/n-grams-for-synthesis</a></span>
 <br/>
-<span class="description">Tabling code for miniKanren.  Only handles unification constraints, and has various limitations.</span>
+<span class="description">n-gram probabilities based on Lisp code, for directing search of the relational Scheme interpreter</span>
+<br/>
+<span class="topics">[]</span>
+</li>
+<li class="repo ">
+<span class="name"><a href="https://github.com/webyrd/strange-loop-2013">webyrd/strange-loop-2013</a></span>
+<br/>
+<span class="description">Code from the 2013 Strange Loop talk with Dan Friedman, 'A Relational Exploration of the Chomsky Hierarchy'</span>
 <br/>
 <span class="topics">[]</span>
 </li>
@@ -282,9 +313,9 @@ ul.topic_cloud li {
 <span class="topics">[]</span>
 </li>
 <li class="repo ">
-<span class="name"><a href="https://github.com/webyrd/tree-automata">webyrd/tree-automata</a></span>
+<span class="name"><a href="https://github.com/webyrd/underconstraints">webyrd/underconstraints</a></span>
 <br/>
-<span class="description">Tree-automata-based run-time type constraints for miniKanren</span>
+<span class="description">Underconstraints for miniKanren</span>
 <br/>
 <span class="topics">[]</span>
 </li>
@@ -310,30 +341,9 @@ ul.topic_cloud li {
 <span class="topics">[]</span>
 </li>
 <li class="repo ">
-<span class="name"><a href="https://github.com/webyrd/strange-loop-2013">webyrd/strange-loop-2013</a></span>
-<br/>
-<span class="description">Code from the 2013 Strange Loop talk with Dan Friedman, 'A Relational Exploration of the Chomsky Hierarchy'</span>
-<br/>
-<span class="topics">[]</span>
-</li>
-<li class="repo ">
 <span class="name"><a href="https://github.com/webyrd/igors-turing-machine">webyrd/igors-turing-machine</a></span>
 <br/>
 <span class="description">Igor Wiedler's relational Turing Machine, ported from core.logic to miniKanren</span>
-<br/>
-<span class="topics">[]</span>
-</li>
-<li class="repo ">
-<span class="name"><a href="https://github.com/webyrd/n-grams-for-synthesis">webyrd/n-grams-for-synthesis</a></span>
-<br/>
-<span class="description">n-gram probabilities based on Lisp code, for directing search of the relational Scheme interpreter</span>
-<br/>
-<span class="topics">[]</span>
-</li>
-<li class="repo ">
-<span class="name"><a href="https://github.com/webyrd/first-class-macros">webyrd/first-class-macros</a></span>
-<br/>
-<span class="description">First class macros, based on Matt Might's blog post http://matt.might.net/articles/metacircular-evaluation-and-first-class-run-time-macros/</span>
 <br/>
 <span class="topics">[]</span>
 </li>
@@ -348,6 +358,27 @@ ul.topic_cloud li {
 <span class="name"><a href="https://github.com/webyrd/relational-dfa">webyrd/relational-dfa</a></span>
 <br/>
 <span class="description">Relational deterministic finite automaton interpreter</span>
+<br/>
+<span class="topics">[]</span>
+</li>
+<li class="repo ">
+<span class="name"><a href="https://github.com/webyrd/mk-cps">webyrd/mk-cps</a></span>
+<br/>
+<span class="description">Explorations of Continuation-Passing Style in miniKanren</span>
+<br/>
+<span class="topics">[]</span>
+</li>
+<li class="repo ">
+<span class="name"><a href="https://github.com/webyrd/first-class-macros">webyrd/first-class-macros</a></span>
+<br/>
+<span class="description">First class macros, based on Matt Might's blog post http://matt.might.net/articles/metacircular-evaluation-and-first-class-run-time-macros/</span>
+<br/>
+<span class="topics">[]</span>
+</li>
+<li class="repo ">
+<span class="name"><a href="https://github.com/webyrd/relational-unifier">webyrd/relational-unifier</a></span>
+<br/>
+<span class="description">Relational unifier, implemented in miniKanren</span>
 <br/>
 <span class="topics">[]</span>
 </li>
@@ -387,20 +418,6 @@ ul.topic_cloud li {
 <span class="topics">[]</span>
 </li>
 <li class="repo ">
-<span class="name"><a href="https://github.com/webyrd/relational-unifier">webyrd/relational-unifier</a></span>
-<br/>
-<span class="description">Relational unifier, implemented in miniKanren</span>
-<br/>
-<span class="topics">[]</span>
-</li>
-<li class="repo ">
-<span class="name"><a href="https://github.com/webyrd/mk-cps">webyrd/mk-cps</a></span>
-<br/>
-<span class="description">Explorations of Continuation-Passing Style in miniKanren</span>
-<br/>
-<span class="topics">[]</span>
-</li>
-<li class="repo ">
 <span class="name"><a href="https://github.com/webyrd/meta-circular-interp-in-mk">webyrd/meta-circular-interp-in-mk</a></span>
 <br/>
 <span class="description"></span>
@@ -429,6 +446,13 @@ ul.topic_cloud li {
 <span class="topics">[]</span>
 </li>
 <li class="repo ">
+<span class="name"><a href="https://github.com/webyrd/miniKanren-pretty-printer">webyrd/miniKanren-pretty-printer</a></span>
+<br/>
+<span class="description">A super simple pretty printer for miniKanren, designed for live coding</span>
+<br/>
+<span class="topics">[]</span>
+</li>
+<li class="repo ">
 <span class="name"><a href="https://github.com/webyrd/2011-scheme-workshop-quines-paper-code">webyrd/2011-scheme-workshop-quines-paper-code</a></span>
 <br/>
 <span class="description">Code from the 2011 Scheme Workshop Paper by Byrd, Holk, and Friedman, "miniKanren, Live and Untagged: Quine Generation via Relational Interpreters"</span>
@@ -450,9 +474,23 @@ ul.topic_cloud li {
 <span class="topics">[]</span>
 </li>
 <li class="repo ">
+<span class="name"><a href="https://github.com/webyrd/pcpo">webyrd/pcpo</a></span>
+<br/>
+<span class="description">Post Correspondence Problem in miniKanren</span>
+<br/>
+<span class="topics">[]</span>
+</li>
+<li class="repo ">
 <span class="name"><a href="https://github.com/webyrd/cartesian-evalo">webyrd/cartesian-evalo</a></span>
 <br/>
 <span class="description">Cartesian product of multiple evalos</span>
+<br/>
+<span class="topics">[]</span>
+</li>
+<li class="repo ">
+<span class="name"><a href="https://github.com/webyrd/error-handling-relational-interpreter">webyrd/error-handling-relational-interpreter</a></span>
+<br/>
+<span class="description">Relational interpreter that explicitly represents errors, and can generate programs with specific errors</span>
 <br/>
 <span class="topics">[]</span>
 </li>
@@ -478,13 +516,6 @@ ul.topic_cloud li {
 <span class="topics">[]</span>
 </li>
 <li class="repo ">
-<span class="name"><a href="https://github.com/webyrd/miniKanren-pretty-printer">webyrd/miniKanren-pretty-printer</a></span>
-<br/>
-<span class="description">A super simple pretty printer for miniKanren, designed for live coding</span>
-<br/>
-<span class="topics">[]</span>
-</li>
-<li class="repo ">
 <span class="name"><a href="https://github.com/webyrd/meta-interp">webyrd/meta-interp</a></span>
 <br/>
 <span class="description">Playing with meta-interpreters in miniKanren</span>
@@ -499,23 +530,9 @@ ul.topic_cloud li {
 <span class="topics">[]</span>
 </li>
 <li class="repo ">
-<span class="name"><a href="https://github.com/webyrd/pcpo">webyrd/pcpo</a></span>
-<br/>
-<span class="description">Post Correspondence Problem in miniKanren</span>
-<br/>
-<span class="topics">[]</span>
-</li>
-<li class="repo ">
 <span class="name"><a href="https://github.com/webyrd/mk-interpreter-with-term-size">webyrd/mk-interpreter-with-term-size</a></span>
 <br/>
 <span class="description">miniKanren relational interpreter with term size argument</span>
-<br/>
-<span class="topics">[]</span>
-</li>
-<li class="repo ">
-<span class="name"><a href="https://github.com/webyrd/error-handling-relational-interpreter">webyrd/error-handling-relational-interpreter</a></span>
-<br/>
-<span class="description">Relational interpreter that explicitly represents errors, and can generate programs with specific errors</span>
 <br/>
 <span class="topics">[]</span>
 </li>
