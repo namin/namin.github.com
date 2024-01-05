@@ -95,10 +95,12 @@ ul.topic_cloud li {
 <div class="my_world">
 <div class="topic_cloud">
 <ul class="topic_cloud">
+<li class="count1"><a href="#top" onclick="topic_select('a-star-search');">a-star-search</a></li>
 <li class="count1"><a href="#top" onclick="topic_select('abstract-interpretation');">abstract-interpretation</a></li>
 <li class="count5"><a href="#top" onclick="topic_select('ai');">ai</a></li>
 <li class="count2"><a href="#top" onclick="topic_select('binders');">binders</a></li>
 <li class="count3"><a href="#top" onclick="topic_select('c');">c</a></li>
+<li class="count1"><a href="#top" onclick="topic_select('chatgpt');">chatgpt</a></li>
 <li class="count5"><a href="#top" onclick="topic_select('clojure');">clojure</a></li>
 <li class="count3"><a href="#top" onclick="topic_select('collapsing-towers');">collapsing-towers</a></li>
 <li class="count3"><a href="#top" onclick="topic_select('common-lisp');">common-lisp</a></li>
@@ -121,8 +123,9 @@ ul.topic_cloud li {
 <li class="count1"><a href="#top" onclick="topic_select('java');">java</a></li>
 <li class="count1"><a href="#top" onclick="topic_select('jax');">jax</a></li>
 <li class="count1"><a href="#top" onclick="topic_select('jit');">jit</a></li>
+<li class="count1"><a href="#top" onclick="topic_select('lean');">lean</a></li>
 <li class="count1"><a href="#top" onclick="topic_select('lisp');">lisp</a></li>
-<li class="count1"><a href="#top" onclick="topic_select('llm');">llm</a></li>
+<li class="count2"><a href="#top" onclick="topic_select('llm');">llm</a></li>
 <li class="count4"><a href="#top" onclick="topic_select('logic-programming');">logic-programming</a></li>
 <li class="count1"><a href="#top" onclick="topic_select('meta');">meta</a></li>
 <li class="count1"><a href="#top" onclick="topic_select('meta-reasoning');">meta-reasoning</a></li>
@@ -130,7 +133,7 @@ ul.topic_cloud li {
 <li class="count1"><a href="#top" onclick="topic_select('metabolic-network');">metabolic-network</a></li>
 <li class="count3"><a href="#top" onclick="topic_select('metaprogramming');">metaprogramming</a></li>
 <li class="count6"><a href="#top" onclick="topic_select('minikanren');">minikanren</a></li>
-<li class="count1"><a href="#top" onclick="topic_select('monte-carlo-tree-search');">monte-carlo-tree-search</a></li>
+<li class="count2"><a href="#top" onclick="topic_select('monte-carlo-tree-search');">monte-carlo-tree-search</a></li>
 <li class="count3"><a href="#top" onclick="topic_select('multi-stage-programming');">multi-stage-programming</a></li>
 <li class="count1"><a href="#top" onclick="topic_select('music');">music</a></li>
 <li class="count1"><a href="#top" onclick="topic_select('ncats-translator');">ncats-translator</a></li>
@@ -145,10 +148,12 @@ ul.topic_cloud li {
 <li class="count2"><a href="#top" onclick="topic_select('reasoning');">reasoning</a></li>
 <li class="count10"><a href="#top" onclick="topic_select('reflection');">reflection</a></li>
 <li class="count6"><a href="#top" onclick="topic_select('scala');">scala</a></li>
-<li class="count16"><a href="#top" onclick="topic_select('scheme');">scheme</a></li>
+<li class="count17"><a href="#top" onclick="topic_select('scheme');">scheme</a></li>
 <li class="count1"><a href="#top" onclick="topic_select('smt');">smt</a></li>
+<li class="count3"><a href="#top" onclick="topic_select('synthesis');">synthesis</a></li>
 <li class="count1"><a href="#top" onclick="topic_select('theorem-prover');">theorem-prover</a></li>
 <li class="count7"><a href="#top" onclick="topic_select('towers');">towers</a></li>
+<li class="count2"><a href="#top" onclick="topic_select('truth-maintenance');">truth-maintenance</a></li>
 <li class="count2"><a href="#top" onclick="topic_select('tutorial');">tutorial</a></li>
 <li class="count2"><a href="#top" onclick="topic_select('twelf');">twelf</a></li>
 <li class="count1"><a href="#top" onclick="topic_select('unsound');">unsound</a></li>
@@ -180,6 +185,13 @@ ul.topic_cloud li {
 <br/>
 <span class="topics">[<a href="#top" onclick="topic_select('meta-theory');">meta-theory</a>, <a href="#top" onclick="topic_select('twelf');">twelf</a>, <a href="#top" onclick="topic_select('plt-redex');">plt-redex</a>, <a href="#top" onclick="topic_select('coq');">coq</a>, <a href="#top" onclick="topic_select('dafny');">dafny</a>, <a href="#top" onclick="topic_select('oop');">oop</a>]</span>
 </li>
+<li class="repo ai dafny llm monte-carlo-tree-search coq lean synthesis">
+<span class="name"><a href="https://github.com/namin/llm-verified-with-monte-carlo-tree-search">namin/llm-verified-with-monte-carlo-tree-search</a></span>
+<br/>
+<span class="description">LLM verified with Monte Carlo Tree Search</span>
+<br/>
+<span class="topics">[<a href="#top" onclick="topic_select('ai');">ai</a>, <a href="#top" onclick="topic_select('dafny');">dafny</a>, <a href="#top" onclick="topic_select('llm');">llm</a>, <a href="#top" onclick="topic_select('monte-carlo-tree-search');">monte-carlo-tree-search</a>, <a href="#top" onclick="topic_select('coq');">coq</a>, <a href="#top" onclick="topic_select('lean');">lean</a>, <a href="#top" onclick="topic_select('synthesis');">synthesis</a>]</span>
+</li>
 <li class="repo interactive tutorial github docker">
 <span class="name"><a href="https://github.com/namin/io.livecode.ch">namin/io.livecode.ch</a></span> <span class="web">(<a href="http://io.livecode.ch">web</a>)</span>
 <br/>
@@ -207,13 +219,6 @@ ul.topic_cloud li {
 <span class="description">explorations in core.logic</span>
 <br/>
 <span class="topics">[<a href="#top" onclick="topic_select('clojure');">clojure</a>, <a href="#top" onclick="topic_select('prolog');">prolog</a>, <a href="#top" onclick="topic_select('abstract-interpretation');">abstract-interpretation</a>, <a href="#top" onclick="topic_select('metaprogramming');">metaprogramming</a>, <a href="#top" onclick="topic_select('logic-programming');">logic-programming</a>, <a href="#top" onclick="topic_select('paper-implementations');">paper-implementations</a>, <a href="#top" onclick="topic_select('binders');">binders</a>]</span>
-</li>
-<li class="repo ai dafny llm monte-carlo-tree-search coq">
-<span class="name"><a href="https://github.com/namin/llm-verified-with-monte-carlo-tree-search">namin/llm-verified-with-monte-carlo-tree-search</a></span>
-<br/>
-<span class="description">LLM verified with Monte Carlo Tree Search</span>
-<br/>
-<span class="topics">[<a href="#top" onclick="topic_select('ai');">ai</a>, <a href="#top" onclick="topic_select('dafny');">dafny</a>, <a href="#top" onclick="topic_select('llm');">llm</a>, <a href="#top" onclick="topic_select('monte-carlo-tree-search');">monte-carlo-tree-search</a>, <a href="#top" onclick="topic_select('coq');">coq</a>]</span>
 </li>
 <li class="repo scala generative-programming metaprogramming towers collapsing-towers plt-redex">
 <span class="name"><a href="https://github.com/TiarkRompf/collapsing-towers">TiarkRompf/collapsing-towers</a></span>
@@ -243,12 +248,12 @@ ul.topic_cloud li {
 <br/>
 <span class="topics">[<a href="#top" onclick="topic_select('scheme');">scheme</a>, <a href="#top" onclick="topic_select('generative-programming');">generative-programming</a>, <a href="#top" onclick="topic_select('metaprogramming');">metaprogramming</a>, <a href="#top" onclick="topic_select('towers');">towers</a>, <a href="#top" onclick="topic_select('collapsing-towers');">collapsing-towers</a>]</span>
 </li>
-<li class="repo metabolic-network common-lisp ai reasoning expert-system ncats-translator">
+<li class="repo metabolic-network common-lisp ai reasoning expert-system ncats-translator truth-maintenance">
 <span class="name"><a href="https://github.com/namin/biohacker">namin/biohacker</a></span>
 <br/>
 <span class="description">debugging biological networks to reach coherence, completeness and consistency</span>
 <br/>
-<span class="topics">[<a href="#top" onclick="topic_select('metabolic-network');">metabolic-network</a>, <a href="#top" onclick="topic_select('common-lisp');">common-lisp</a>, <a href="#top" onclick="topic_select('ai');">ai</a>, <a href="#top" onclick="topic_select('reasoning');">reasoning</a>, <a href="#top" onclick="topic_select('expert-system');">expert-system</a>, <a href="#top" onclick="topic_select('ncats-translator');">ncats-translator</a>]</span>
+<span class="topics">[<a href="#top" onclick="topic_select('metabolic-network');">metabolic-network</a>, <a href="#top" onclick="topic_select('common-lisp');">common-lisp</a>, <a href="#top" onclick="topic_select('ai');">ai</a>, <a href="#top" onclick="topic_select('reasoning');">reasoning</a>, <a href="#top" onclick="topic_select('expert-system');">expert-system</a>, <a href="#top" onclick="topic_select('ncats-translator');">ncats-translator</a>, <a href="#top" onclick="topic_select('truth-maintenance');">truth-maintenance</a>]</span>
 </li>
 <li class="repo music harmony composition clojure overtone">
 <span class="name"><a href="https://github.com/namin/metasolfeggio">namin/metasolfeggio</a></span>
@@ -327,6 +332,13 @@ ul.topic_cloud li {
 <br/>
 <span class="topics">[<a href="#top" onclick="topic_select('dafny');">dafny</a>, <a href="#top" onclick="topic_select('coq');">coq</a>, <a href="#top" onclick="topic_select('meta-theory');">meta-theory</a>, <a href="#top" onclick="topic_select('binders');">binders</a>]</span>
 </li>
+<li class="repo reflection paper-implementations towers">
+<span class="name"><a href="https://github.com/namin/reflective-towers">namin/reflective-towers</a></span> <span class="web">(<a href="https://io.livecode.ch/learn/namin/reflective-towers">web</a>)</span> <span class="livecode">(<a href="http://io.livecode.ch/learn/namin/reflective-towers">livecode</a>)</span>
+<br/>
+<span class="description">software archaeology of reflective towers of interpreters</span>
+<br/>
+<span class="topics">[<a href="#top" onclick="topic_select('reflection');">reflection</a>, <a href="#top" onclick="topic_select('paper-implementations');">paper-implementations</a>, <a href="#top" onclick="topic_select('towers');">towers</a>]</span>
+</li>
 <li class="repo reflection scheme paper-implementations towers">
 <span class="name"><a href="https://github.com/namin/blond">namin/blond</a></span> <span class="livecode">(<a href="http://io.livecode.ch/learn/namin/blond">livecode</a>)</span>
 <br/>
@@ -340,13 +352,6 @@ ul.topic_cloud li {
 <span class="description">Translation of Pierce's 'Types and Programming Languages' into miniKanren/core.logic</span>
 <br/>
 <span class="topics">[]</span>
-</li>
-<li class="repo reflection paper-implementations towers">
-<span class="name"><a href="https://github.com/namin/reflective-towers">namin/reflective-towers</a></span> <span class="web">(<a href="https://io.livecode.ch/learn/namin/reflective-towers">web</a>)</span> <span class="livecode">(<a href="http://io.livecode.ch/learn/namin/reflective-towers">livecode</a>)</span>
-<br/>
-<span class="description">software archaeology of reflective towers of interpreters</span>
-<br/>
-<span class="topics">[<a href="#top" onclick="topic_select('reflection');">reflection</a>, <a href="#top" onclick="topic_select('paper-implementations');">paper-implementations</a>, <a href="#top" onclick="topic_select('towers');">towers</a>]</span>
 </li>
 <li class="repo scheme reflection oop">
 <span class="name"><a href="https://github.com/namin/rop">namin/rop</a></span>
@@ -376,12 +381,12 @@ ul.topic_cloud li {
 <br/>
 <span class="topics">[<a href="#top" onclick="topic_select('clojure');">clojure</a>, <a href="#top" onclick="topic_select('paper-implementations');">paper-implementations</a>]</span>
 </li>
-<li class="repo jax neuro-symbolic differentiable-programming interpreters paper-implementations">
+<li class="repo jax neuro-symbolic differentiable-programming interpreters paper-implementations synthesis">
 <span class="name"><a href="https://github.com/namin/relaxed-machines">namin/relaxed-machines</a></span>
 <br/>
 <span class="description">explorations in neuro-symbolic differentiable interpreters</span>
 <br/>
-<span class="topics">[<a href="#top" onclick="topic_select('jax');">jax</a>, <a href="#top" onclick="topic_select('neuro-symbolic');">neuro-symbolic</a>, <a href="#top" onclick="topic_select('differentiable-programming');">differentiable-programming</a>, <a href="#top" onclick="topic_select('interpreters');">interpreters</a>, <a href="#top" onclick="topic_select('paper-implementations');">paper-implementations</a>]</span>
+<span class="topics">[<a href="#top" onclick="topic_select('jax');">jax</a>, <a href="#top" onclick="topic_select('neuro-symbolic');">neuro-symbolic</a>, <a href="#top" onclick="topic_select('differentiable-programming');">differentiable-programming</a>, <a href="#top" onclick="topic_select('interpreters');">interpreters</a>, <a href="#top" onclick="topic_select('paper-implementations');">paper-implementations</a>, <a href="#top" onclick="topic_select('synthesis');">synthesis</a>]</span>
 </li>
 <li class="repo reflection scheme">
 <span class="name"><a href="https://github.com/namin/refl-instr">namin/refl-instr</a></span> <span class="livecode">(<a href="http://io.livecode.ch/learn/namin/refl-instr">livecode</a>)</span>
@@ -452,6 +457,27 @@ ul.topic_cloud li {
 <span class="description"></span>
 <br/>
 <span class="topics">[]</span>
+</li>
+<li class="repo a-star-search monte-carlo-tree-search scheme synthesis">
+<span class="name"><a href="https://github.com/metareflection/synthesis-scheme">metareflection/synthesis-scheme</a></span>
+<br/>
+<span class="description">explorations of Scheme synthesis in Scheme</span>
+<br/>
+<span class="topics">[<a href="#top" onclick="topic_select('a-star-search');">a-star-search</a>, <a href="#top" onclick="topic_select('monte-carlo-tree-search');">monte-carlo-tree-search</a>, <a href="#top" onclick="topic_select('scheme');">scheme</a>, <a href="#top" onclick="topic_select('synthesis');">synthesis</a>]</span>
+</li>
+<li class="repo llm truth-maintenance">
+<span class="name"><a href="https://github.com/metareflection/llm-mysteries">metareflection/llm-mysteries</a></span> <span class="livecode">(<a href="http://io.livecode.ch/learn/metareflection/llm-mysteries">livecode</a>)</span>
+<br/>
+<span class="description">LLMs for reasoning via 5-minute mysteries</span>
+<br/>
+<span class="topics">[<a href="#top" onclick="topic_select('llm');">llm</a>, <a href="#top" onclick="topic_select('truth-maintenance');">truth-maintenance</a>]</span>
+</li>
+<li class="repo chatgpt">
+<span class="name"><a href="https://github.com/namin/io-chatgpt.livecode.ch">namin/io-chatgpt.livecode.ch</a></span>
+<br/>
+<span class="description">a ChatGPT plugin to interact with io.livecode.ch, which can be used as a template to create custom ChatGPT plugins and GPT actions</span>
+<br/>
+<span class="topics">[<a href="#top" onclick="topic_select('chatgpt');">chatgpt</a>]</span>
 </li>
 </ul>
 </div>
