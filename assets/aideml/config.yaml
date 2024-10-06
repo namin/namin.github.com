@@ -1,0 +1,57 @@
+data_dir: !!python/object/apply:pathlib.PosixPath
+- /
+- Users
+- namin
+- code
+- wec
+- aideml
+- aide
+- example_tasks
+- house_prices
+desc_file: null
+goal: Predict the sales price for each house
+eval: Use the RMSE metric between the logarithm of the predicted and observed values.
+log_dir: !!python/object/apply:pathlib.PosixPath
+- /
+- Users
+- namin
+- code
+- wec
+- aideml
+- logs
+- 2-astute-lovely-bobcat
+workspace_dir: !!python/object/apply:pathlib.PosixPath
+- /
+- Users
+- namin
+- code
+- wec
+- aideml
+- workspaces
+- 2-astute-lovely-bobcat
+preprocess_data: true
+copy_data: true
+exp_name: 2-astute-lovely-bobcat
+exec:
+  timeout: 3600
+  agent_file_name: runfile.py
+  format_tb_ipython: false
+generate_report: true
+report:
+  model: qwen2.5
+  temp: 1.0
+agent:
+  steps: 20
+  k_fold_validation: 5
+  expose_prediction: false
+  data_preview: true
+  code:
+    model: qwen2.5
+    temp: 0.5
+  feedback:
+    model: qwen2.5
+    temp: 0.5
+  search:
+    max_debug_depth: 3
+    debug_prob: 0.5
+    num_drafts: 5
