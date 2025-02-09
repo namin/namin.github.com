@@ -72,6 +72,12 @@
   background-color: #333;
 }
 
+.highlight pre {
+  overflow-x: auto;
+  white-space: pre;
+  word-wrap: normal;
+}
+
 img {
  height: 100%;
  width: 100%;
